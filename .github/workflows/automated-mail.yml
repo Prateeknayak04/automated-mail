@@ -1,7 +1,9 @@
 name: "Sending mail for faild wrokflows"
 
 on:
- workflow_dispatch:
+ push:
+  branches:
+   - main
   
 
 jobs:
