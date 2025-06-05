@@ -10,7 +10,7 @@ jobs:
  send-mail:
   runs-on: ubuntu-latest
   steps:
-   - name: Chech out the repo
+   - name: checkout the repo
      uses: actions/checkout@v2
 
    - name: configure python
@@ -29,7 +29,7 @@ jobs:
       WORKFLOW_RUN_ID: ${{ github.run_id }}
       SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
       SENDER_MAIL: ${{ secrets.SENDER_MAIL }}
-      RECEIVER_MAIL: ${{ secrets.RECIEVER_MAIL }}
+      RECEIVER_MAIL: ${{ secrets.RECEIVER_MAIL }}
    
    
   
