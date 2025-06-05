@@ -1,4 +1,4 @@
-name: "Sending mail for faild wrokflows"
+name: "Sending mail for faild workflows"
 
 on:
  push:
