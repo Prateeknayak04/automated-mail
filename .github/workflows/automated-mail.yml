@@ -1,4 +1,4 @@
-name: "Sending mail for faild workflows"
+name: "Sending mail for failed workflows"
 
 on:
  push:
@@ -18,10 +18,10 @@ jobs:
      with:
       python-version: '3.10'
    
-   - name: Install dependecies
+   - name: Install dependencies
      run: python -m pip install --upgrade pip
 
-   - name: Send may mail
+   - name: Send my mail
      run: python3 script.py
      env:
       WORKFLOW_NAME: ${{ github.workflow }}
