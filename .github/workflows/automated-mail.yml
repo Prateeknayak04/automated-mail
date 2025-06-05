@@ -8,7 +8,7 @@ on:
 
 jobs:
  send-mail:
-  runs-on: ubuntu:latest
+  runs-on: ubuntu-latest
   steps:
    - name: Chech out the repo
      uses: actions/checkout@v2
@@ -16,7 +16,7 @@ jobs:
    - name: configure python
      uses: actions/setup-python@v2
      with:
-      python-version: '3.11'
+      python-version: '3.10'
    
    - name: Install dependecies
      run: python -m pip install --upgrade pip

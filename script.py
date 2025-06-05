@@ -6,7 +6,7 @@ import os
 
 def send_mail(workflow_name, repo_name, workflow_run_id):
     # Email details
-    sender_mail = os.getenv(" SENDER_MAIL")
+    sender_mail = os.getenv("SENDER_MAIL")
     sender_password = os.getenv("SENDER_PASSWORD")
     receiver_mail = os.getenv("RECEIVER_MAIL")
 
