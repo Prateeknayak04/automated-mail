@@ -1,7 +1,7 @@
 name: "Sending mail for faild wrokflows"
 
 on:
- wrokflow_dispatch:
+ workflow_dispatch:
   
 
 jobs:
